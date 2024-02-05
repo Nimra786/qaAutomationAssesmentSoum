@@ -1,11 +1,10 @@
 import CartPage from '../pages/cartPage';
 import LoginPage from '../pages/loginPage';
 
-import user from '../../../fixtures/user.json';
-
-describe('Dashboard Test', () => {
+describe('Cart Test', () => {
+    const baseUrl = Cypress.config('baseUrl');
     beforeEach(() => {
-        cy.visit('https://www.saucedemo.com/');
+        cy.visit(baseUrl);
         cy.fixture('user').then((users) => {
             const user = users.users[0];
           cy.get(LoginPage.inpUsername).type(user.username);
@@ -16,7 +15,7 @@ describe('Dashboard Test', () => {
 
     it('Validate number of items in cart', () => {
         // assertions
-        cy.url().should('eq', 'https://www.saucedemo.com/inventory.html');
+        cy.url().should('eq', baseUrl + 'inventory.html');
         cy.get(CartPage.icnItemCount).should('not.exist');
 
         // actions
@@ -41,13 +40,14 @@ describe('Dashboard Test', () => {
         cy.get(CartPage.btnCart).click();
 
         // assertions
+        cy.url().should('eq', baseUrl + 'cart.html');
         cy.get(CartPage.lblPageTitle).should('have.text','Your Cart')
         CartPage.countCartItems();
     });
 
     it('Remove 1 item and assert number of items in cart', () => {
         // assertions
-        cy.url().should('eq', 'https://www.saucedemo.com/inventory.html');
+        cy.url().should('eq', baseUrl + 'inventory.html');
         cy.get(CartPage.icnItemCount).should('not.exist');
 
         // actions
@@ -72,6 +72,7 @@ describe('Dashboard Test', () => {
         cy.get(CartPage.btnCart).click();
 
         // assertions
+        cy.url().should('eq', baseUrl + 'cart.html');
         cy.get(CartPage.lblPageTitle).should('have.text','Your Cart')
         CartPage.countCartItems();
 

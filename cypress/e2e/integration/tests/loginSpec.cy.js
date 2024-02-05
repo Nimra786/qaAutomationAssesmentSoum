@@ -1,10 +1,10 @@
 import LoginPage from '../pages/loginPage.js';
-import user from '../../../fixtures/user.json';
 
 describe('Login Test', () => {
+  const baseUrl = Cypress.config('baseUrl');
     it('Succeful Login', () => {
         // actions
-        cy.visit('https://www.saucedemo.com/');
+        cy.visit(baseUrl);   
 
         // assertions
         cy.get(LoginPage.inpUsername).should('be.visible');
@@ -15,7 +15,6 @@ describe('Login Test', () => {
         cy.get(LoginPage.btnLogin).should('be.visible');
         cy.get(LoginPage.btnLogin).should('have.value', 'Login');
 
-
         // actions
         cy.fixture('user').then((users) => {
           const user = users.users[0];
@@ -25,13 +24,12 @@ describe('Login Test', () => {
         });
 
         // assertions
-        cy.url().should('eq', 'https://www.saucedemo.com/inventory.html');
-        
+        cy.url().should('eq',baseUrl + 'inventory.html');
     });
 
     it('Unsuccessful Login', () => {
       // actions
-      cy.visit('https://www.saucedemo.com/');
+      cy.visit(baseUrl);   
 
       // assertions
       cy.get(LoginPage.inpUsername).should('be.visible');
@@ -52,7 +50,7 @@ describe('Login Test', () => {
 
       // assertions
       cy.get(LoginPage.errMessage).should('have.text','Epic sadface: Username and password do not match any user in this service');
-      cy.url().should('eq', 'https://www.saucedemo.com/');
+      cy.url().should('eq', baseUrl);
       
   });
 });
