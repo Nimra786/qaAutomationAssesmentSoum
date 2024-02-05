@@ -1,6 +1,6 @@
 # QA-Test Project
 
-Welcome to the Cypress project! This project contains automated tests for [Website: https://www.saucedemo.com/].
+Welcome to the QA-Test project! This project contains automated tests for [Website: https://www.saucedemo.com/].
 
 
 ## Prerequisites
@@ -22,19 +22,17 @@ cd QA-Test
 
 3. **Install Dependencies:**
 npm install
-## Running Tests
 
+## Running Tests
 Once the dependencies are installed, you can run the tests. There are two ways to run tests:
 
 ### 1. Using the Cypress Test Runner (Interactive Mode):
-
 To run tests interactively in the Cypress Test Runner, use the following command:
 npx cypress open
 
 This command will open the Cypress Test Runner GUI, where you can select and run individual test files.
 
 ### 2. Using Headless Mode:
-
 To run tests in headless mode (without the GUI), use the following command:
 npx cypress run
 
