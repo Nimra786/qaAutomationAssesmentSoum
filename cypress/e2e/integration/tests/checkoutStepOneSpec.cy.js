@@ -1,9 +1,14 @@
 import CartPage from '../pages/cartPage';
+import checkoutStepOnePage from '../pages/checkoutStepOnePage';
 import CheckoutPage from '../pages/checkoutStepOnePage';
 import LoginPage from '../pages/loginPage';
 
 describe('Checkout Step One Test', () => {
     const baseUrl = Cypress.config('baseUrl');
+    // const randomFirstName = casual.first_name;
+    // const randomLastName = casual.last_name;
+    // const randomPostalCode = casual.zip();    
+
     beforeEach(() => {
         cy.visit(baseUrl);
         cy.fixture('user').then((users) => {
@@ -58,11 +63,11 @@ describe('Checkout Step One Test', () => {
 
       // actions
       cy.get(CheckoutPage.inpFirstName).type('Test');
-      cy.get(CheckoutPage.inpLastName).type('123');
-      cy.get(CheckoutPage.inpZipPostalCode).type('65478');
-
+      cy.get(CheckoutPage.inpLastName).type('1223');
+      cy.get(CheckoutPage.inpZipPostalCode).type('65677');
+      cy.get(checkoutStepOnePage.btnContinue).click();
+      
       // assertions
       cy.url().should('eq', baseUrl + 'checkout-step-two.html'); 
-
     });
 });
