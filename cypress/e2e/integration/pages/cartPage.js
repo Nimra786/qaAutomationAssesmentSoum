@@ -8,7 +8,9 @@ class CartPage {
     btnAddToCartRedTShirt = '[id="add-to-cart-test.allthethings()-t-shirt-(red)"]';
 
     btnCart = '[id="shopping_cart_container"]';
-
+    btnCheckout = 'button[name="checkout"]';
+    btnContinueShopping = 'button[name="continue-shopping"]';
+    
     btnRemoveToCartBag = '[id="remove-sauce-labs-backpack"]';
     btnRemoveToCartBikeLight = '[id="remove-sauce-labs-bike-light"]';
     btnRemoveToCartTShirt = '[id="remove-sauce-labs-bolt-t-shirt"]';

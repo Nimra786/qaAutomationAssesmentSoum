@@ -6,6 +6,8 @@ class LoginPage {
 
     inpPassword = 'input[placeholder="Password"]';
     inpUsername = 'input[placeholder="Username"]';
+
+    lblTitle = '[class="login_logo"]';
   }
   export default new LoginPage();
 
