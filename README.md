@@ -68,6 +68,10 @@ I created two file menu.js for objects and menu.cy.js for test cases
 – Contains all test cases related to Order Confirmation page
 I created two file orderConfirmation.js for objects and orderConfirmation.cy.js for test cases
 
+## API Spec File
+– Contains all test cases For API
+It will execute with same cypress commands (npx cypress open) 
+
 ### Other files
 user.json has data for different users to get logged in provided on website.
 cypress.json has baseUrl stuff.
