@@ -1967,6 +1967,7 @@ describe('API Tests', () => {
         // Calculate the response time
         const responseTime = endTime - startTime;
         expect(response.status).to.equal(200);
+        // I use 652 from postman as example because I dont knoe minthreshold for this API
         expect(responseTime).to.be.lessThan(652);
       });
     });
@@ -1980,7 +1981,7 @@ describe('API Tests', () => {
        });
     });
 
-    it('Verify Data Contents of Response', () => {
+    it('Verify Data Contents of Response body', () => {
         cy.request('GET', baseUrl +'/product')
             .then((response) => {
                 expect(response.status).to.eq(200);
