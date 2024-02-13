@@ -1,6 +1,6 @@
-# QA-Test Project
+# QA-Automation-Assesment Project
 
-Welcome to the QA-Test project! This project contains automated tests for [Website: https://www.saucedemo.com/].
+Welcome to the QA-Automation-Assesment project! This project contains automated tests for [Website: https://www.saucedemo.com/].
 
 
 ## Prerequisites
@@ -18,7 +18,7 @@ To get started with the project, follow these steps:
 git clone https://github.com/Nimra786/QA-Test.git
 
 2. **Navigate to the Project Directory:**
-cd QA-Test
+cd AutomationAssesment
 
 3. **Install Dependencies:**
 npm install
@@ -36,29 +36,38 @@ This command will open the Cypress Test Runner GUI, where you can select and run
 To run tests in headless mode (without the GUI), use the following command:
 npx cypress run
 
-### For Scenario-1
-– Navigate to the URL and login with the usernames/profiles in the ‘Accepted
-usernames’ section. If a user profile can login, create an assertion to verify this. If the user
-is unable to login, create an assertion to verify this.
+### Login Page
+– Contains all test cases related to login
+I created two file login.js for objects and loginSpec.cy.js for test cases
 
-I created two file login.js and loginSpec.cy.js
+### Logout Page
+– Contains all test cases related to logout
+I created two file logout.js for objects and logout.cy.js for test cases
 
-### For Scenario-2
-– Login to the website and validate the number of items on the page. Click on
-the dropdown and select Price (low to high), assert that the first item has the lowest price
-and that the last item has the highest price.
+### Product Page
+– Contains all test cases related to product page
+I created two file product.js for objects and product.cy.js for test cases
 
-I created two file dashboard.js and dashboardSpec.cy.js
+### Cart Page
+– Contains all test cases related to cart page
+I created two file cart.js for objects and cart.cy.js for test cases
 
-### For Scenario-3
-– Add 3 items to the basket and assert the right number of items in the basket.
-Remove one item and assert that the item has been removed and that the number of the
-items in the basket has changed.
+### Info Page
+– Contains all test cases related to info page
+I created two file info.js for objects and info.cy.js for test cases
 
+### Overview Page
+– Contains all test cases related to overview page
+I created two file overview.js for objects and overview.cy.js for test cases
 
-I created two file cart.js and cartSpec.cy.js
+### Menu Page
+– Contains all test cases related to menu page
+I created two file menu.js for objects and menu.cy.js for test cases
+
+### Order Confirmation Page
+– Contains all test cases related to Order Confirmation page
+I created two file orderConfirmation.js for objects and orderConfirmation.cy.js for test cases
 
 ### Other files
 user.json has data for different users to get logged in provided on website.
-
 cypress.json has baseUrl stuff.
