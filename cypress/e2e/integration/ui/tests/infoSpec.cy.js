@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 import InfoPage from '../pages/infoPage';
 import LoginPage from '../pages/loginPage';
 
-describe('Checkout Step One Test', () => {
+describe('Info Test', () => {
     const baseUrl = Cypress.config('baseUrl');
     const firstName = faker.name.firstName();
     const lastName = faker.name.lastName();

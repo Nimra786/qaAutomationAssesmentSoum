@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2024-02-19T06:57:12.423Z",
-    "end": "2024-02-19T06:58:52.360Z",
-    "duration": 99937,
+    "start": "2024-02-19T08:06:24.323Z",
+    "end": "2024-02-19T08:08:13.040Z",
+    "duration": 108717,
     "testsRegistered": 7,
     "passPercent": 14.285714285714285,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e2b25c93-5d6e-404e-a483-8dd7cfea43ac",
+      "uuid": "2ae97ad0-857c-48d8-bdd0-afbdfae0a342",
       "title": "",
       "fullFile": "cypress\\e2e\\integration\\ui\\tests\\productSpec.cy.js",
       "file": "cypress\\e2e\\integration\\ui\\tests\\productSpec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4bac34eb-9976-4b48-9330-9ff1b03398a4",
+          "uuid": "fe437580-23bf-4b61-9b48-e61f80c451fd",
           "title": "Product Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Intial Presentation of Product Page",
               "fullTitle": "Product Test Intial Presentation of Product Page",
               "timedOut": null,
-              "duration": 33286,
+              "duration": 35391,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "// assertions        \ncy.url().should('eq', baseUrl + 'inventory.html');\ncy.get(_productPage.default.icnCart).should('be.visible');\ncy.get(_productPage.default.icnMenu).should('be.visible');\ncy.get(_productPage.default.lblTitle).should('be.visible');\ncy.get(_productPage.default.drpSort).should('be.visible');\n_productPage.default.countInventoryItems();\n_productPage.default.verifyInventoryItemName('Sauce Labs Backpack');\n_productPage.default.verifyInventoryItemDescription('carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.');\n_productPage.default.verifyInventoryItemPrice('$29.99');\ncy.get(_productPage.default.btnAddToCartBackPack).should('be.visible');\n_productPage.default.verifyInventoryItemName('Sauce Labs Bike Light');\n_productPage.default.verifyInventoryItemDescription('A red light isn' + 't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.');\n_productPage.default.verifyInventoryItemPrice('$9.99');\ncy.get(_productPage.default.btnAddToCartBikeLight).should('be.visible');\n_productPage.default.verifyInventoryItemName('Sauce Labs Bolt T-Shirt');\n_productPage.default.verifyInventoryItemDescription('Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.');\n_productPage.default.verifyInventoryItemPrice('$15.99');\ncy.get(_productPage.default.btnAddToCartTShirt).should('be.visible');\n_productPage.default.verifyInventoryItemName('Sauce Labs Fleece Jacket');\n_productPage.default.verifyInventoryItemDescription('It' + 's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.');\n_productPage.default.verifyInventoryItemPrice('$49.99');\ncy.get(_productPage.default.btnAddToCartJacket).should('be.visible');\n_productPage.default.verifyInventoryItemName('Sauce Labs Onesie');\n_productPage.default.verifyInventoryItemDescription('Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won' + 't unravel.');\n_productPage.default.verifyInventoryItemPrice('$7.99');\ncy.get(_productPage.default.btnAddToCartOnesie).should('be.visible');\n_productPage.default.verifyInventoryItemName('Test.allTheThings() T-Shirt (Red)');\n_productPage.default.verifyInventoryItemDescription('This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.');\n_productPage.default.verifyInventoryItemPrice('$15.99');\ncy.get(_productPage.default.btnAddToCartRedTShirt).should('be.visible');",
               "err": {},
-              "uuid": "0d157438-e96a-47fc-9502-7c801eda3767",
-              "parentUUID": "4bac34eb-9976-4b48-9330-9ff1b03398a4",
+              "uuid": "08149bcb-f261-4715-814d-ca8d27a1cb97",
+              "parentUUID": "fe437580-23bf-4b61-9b48-e61f80c451fd",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Verify that the product page displays a list of available products",
               "fullTitle": "Product Test Verify that the product page displays a list of available products",
               "timedOut": null,
-              "duration": 60345,
+              "duration": 60284,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
                 "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Product Test`\n    at timedOutWaitingForPageLoad (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:130005:64)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:130991:16)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1807:23)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4186:41)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/integration/ui/tests/productSpec.cy.js:9:11)",
                 "diff": null
               },
-              "uuid": "37940013-2571-43c8-a75c-5b6d114a5947",
-              "parentUUID": "4bac34eb-9976-4b48-9330-9ff1b03398a4",
+              "uuid": "d143178b-7972-4243-b344-75be008dbeb7",
+              "parentUUID": "fe437580-23bf-4b61-9b48-e61f80c451fd",
               "isHook": false,
               "skipped": false
             },
@@ -87,8 +87,8 @@
               "context": null,
               "code": "// assertions\ncy.url().should('eq', baseUrl + 'inventory.html');\ncy.get(_productPage.default.drpSort).should('exist');\ncy.get(_productPage.default.drpSort).contains('Name (A to Z)');\n_productPage.default.verifyAlphabaticalSortAtoZ();",
               "err": {},
-              "uuid": "56faa6c4-52cb-4084-b917-d4c2f9b63a92",
-              "parentUUID": "4bac34eb-9976-4b48-9330-9ff1b03398a4",
+              "uuid": "13f0850a-9672-45f6-a7fc-9d6f392ea6dc",
+              "parentUUID": "fe437580-23bf-4b61-9b48-e61f80c451fd",
               "isHook": false,
               "skipped": true
             },
@@ -105,8 +105,8 @@
               "context": null,
               "code": "// assertions\ncy.url().should('eq', baseUrl + 'inventory.html');\ncy.get(_productPage.default.drpSort).should('exist');\ncy.get(_productPage.default.drpSort).contains('Name (A to Z)');\n// actions\ncy.get(_productPage.default.drpSort).select('Name (Z to A)');\n// assertions\ncy.get(_productPage.default.drpSort).contains('Name (Z to A)');\n_productPage.default.verifyAlphabaticalSortZtoA();",
               "err": {},
-              "uuid": "9f26b815-5981-4cc8-ad9a-16e784200f20",
-              "parentUUID": "4bac34eb-9976-4b48-9330-9ff1b03398a4",
+              "uuid": "6d41c491-4434-4b7a-975d-99742d13c9e8",
+              "parentUUID": "fe437580-23bf-4b61-9b48-e61f80c451fd",
               "isHook": false,
               "skipped": true
             },
@@ -123,8 +123,8 @@
               "context": null,
               "code": "// assertions\ncy.url().should('eq', baseUrl + 'inventory.html');\ncy.get(_productPage.default.drpSort).should('exist');\ncy.get(_productPage.default.drpSort).contains('Name (A to Z)');\n// actions\ncy.get(_productPage.default.drpSort).select('Price (low to high)');\n// assertions\ncy.get(_productPage.default.drpSort).contains('Price (low to high)');\n_productPage.default.verifyAscendingSort();",
               "err": {},
-              "uuid": "deebd3bc-b2de-4d09-a44c-97b9a1da9300",
-              "parentUUID": "4bac34eb-9976-4b48-9330-9ff1b03398a4",
+              "uuid": "4cc13fa1-f325-4871-aa36-a65226aefa44",
+              "parentUUID": "fe437580-23bf-4b61-9b48-e61f80c451fd",
               "isHook": false,
               "skipped": true
             },
@@ -141,8 +141,8 @@
               "context": null,
               "code": "// assertions\ncy.url().should('eq', baseUrl + 'inventory.html');\ncy.get(_productPage.default.drpSort).should('exist');\ncy.get(_productPage.default.drpSort).contains('Name (A to Z)');\n// actions\ncy.get(_productPage.default.drpSort).select('Price (high to low)');\n// assertions\ncy.get(_productPage.default.drpSort).contains('Price (high to low)');\n_productPage.default.verifyDescendingSort();",
               "err": {},
-              "uuid": "c99bc209-844f-4786-ac4e-6d79c7442f68",
-              "parentUUID": "4bac34eb-9976-4b48-9330-9ff1b03398a4",
+              "uuid": "c305111b-e4de-45ba-8ae6-cf47b730e57b",
+              "parentUUID": "fe437580-23bf-4b61-9b48-e61f80c451fd",
               "isHook": false,
               "skipped": true
             },
@@ -159,28 +159,28 @@
               "context": null,
               "code": "// assertions\ncy.url().should('eq', baseUrl + 'inventory.html');\n// actions\ncy.get(_menuPage.default.icnMenu).click();\ncy.get(_menuPage.default.itemMenu).contains('All Items').click();\n// assertions\ncy.url().should('eq', baseUrl + 'inventory.html');",
               "err": {},
-              "uuid": "41155b6a-636a-4040-99ab-83cee5b34249",
-              "parentUUID": "4bac34eb-9976-4b48-9330-9ff1b03398a4",
+              "uuid": "cb881931-98d3-43fa-9561-4580c6f014c9",
+              "parentUUID": "fe437580-23bf-4b61-9b48-e61f80c451fd",
               "isHook": false,
               "skipped": true
             }
           ],
           "suites": [],
           "passes": [
-            "0d157438-e96a-47fc-9502-7c801eda3767"
+            "08149bcb-f261-4715-814d-ca8d27a1cb97"
           ],
           "failures": [
-            "37940013-2571-43c8-a75c-5b6d114a5947"
+            "d143178b-7972-4243-b344-75be008dbeb7"
           ],
           "pending": [],
           "skipped": [
-            "56faa6c4-52cb-4084-b917-d4c2f9b63a92",
-            "9f26b815-5981-4cc8-ad9a-16e784200f20",
-            "deebd3bc-b2de-4d09-a44c-97b9a1da9300",
-            "c99bc209-844f-4786-ac4e-6d79c7442f68",
-            "41155b6a-636a-4040-99ab-83cee5b34249"
+            "13f0850a-9672-45f6-a7fc-9d6f392ea6dc",
+            "6d41c491-4434-4b7a-975d-99742d13c9e8",
+            "4cc13fa1-f325-4871-aa36-a65226aefa44",
+            "c305111b-e4de-45ba-8ae6-cf47b730e57b",
+            "cb881931-98d3-43fa-9561-4580c6f014c9"
           ],
-          "duration": 93631,
+          "duration": 95675,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
