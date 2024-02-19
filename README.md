@@ -75,3 +75,9 @@ It will execute with same cypress commands (npx cypress open)
 ### Other files
 user.json has data for different users to get logged in provided on website.
 cypress.json has baseUrl stuff.
+
+### To Create Reports 
+- For creation of reports for all test files together,
+  Use **npx cypress run --reporter mochawesome
+- For creation for each test case file separately
+  Use npx cypress run --reporter mochawesome --reporter-options "reportFilename=test1"
