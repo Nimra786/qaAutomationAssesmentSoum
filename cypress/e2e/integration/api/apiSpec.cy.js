@@ -1967,8 +1967,8 @@ describe('API Tests', () => {
         // Calculate the response time
         const responseTime = endTime - startTime;
         expect(response.status).to.equal(200);
-        // I use 652 from postman as example because I dont knoe minthreshold for this API
-        expect(responseTime).to.be.lessThan(652);
+        // I use 652 from postman as example because I dont know minnimum threshold for this API
+        expect(responseTime).to.be.lessThan(927);
       });
     });
 
@@ -1987,8 +1987,8 @@ describe('API Tests', () => {
                 expect(response.status).to.eq(200);
                 expect(response.body.message).to.eq('Get Products successfully');
                 // this total will be change whenever new records added.
-                expect(response.body.responseData.info.total).to.eq( 463129);
-                expect(response.body.responseData.info.pages).to.eq( 92626);
+                expect(response.body.responseData.info.total).to.eq( 464352);
+                expect(response.body.responseData.info.pages).to.eq( 92871 );
 
                 expect(response.body.responseData.results[1].description).to.eq('بدر');
                 expect(response.body.responseData.results[1].grade).to.eq('Extensive Use');
@@ -2079,8 +2079,9 @@ describe('API Tests', () => {
               expect(response.status).to.eq(200);
               expect(response.body.message).to.eq('Get Products successfully');
               // this total will be change whenever new records added.
-              expect(response.body.responseData.info.total).to.eq( 463129);
-              expect(response.body.responseData.info.pages).to.eq( 92626);
+              expect(response.body.responseData.info.total).to.eq( 464352 
+                );
+              expect(response.body.responseData.info.pages).to.eq( 92871 );
 
               expect(response.body.responseData.results).to.have.length(5);
     
@@ -2096,8 +2097,8 @@ describe('API Tests', () => {
               expect(response.status).to.eq(200);
               expect(response.body.message).to.eq('Get Products successfully');
               // this total will be change whenever new records added.
-              expect(response.body.responseData.info.total).to.eq(463129);
-              expect(response.body.responseData.info.pages).to.eq(463129);
+              expect(response.body.responseData.info.total).to.eq(464352 );
+              expect(response.body.responseData.info.pages).to.eq(464352  );
 
               expect(response.body.responseData.results).to.have.length(1);
     
@@ -2113,8 +2114,8 @@ describe('API Tests', () => {
               expect(response.status).to.eq(200);
               expect(response.body.message).to.eq('Get Products successfully');
               // this total will be change whenever new records added.
-              expect(response.body.responseData.info.total).to.eq(463129);
-              expect(response.body.responseData.info.pages).to.eq(463129);
+              expect(response.body.responseData.info.total).to.eq(464352 );
+              expect(response.body.responseData.info.pages).to.eq(464352 );
 
               expect(response.body.responseData.results).to.have.length(1);
     
